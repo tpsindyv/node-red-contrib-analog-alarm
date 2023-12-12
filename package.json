@@ -1,10 +1,8 @@
 {
-  "name": "node-red-contrib-analog-alarm",
-  "version": "0.0.8",
+  "name": "@thingspal/node-red-contrib-analog-alarm",
+  "version": "1.0.1",
   "description": "A simple HiHi-Hi-Lo-LoLo alarm node",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tpsindyv/node-red-contrib-analog-alarm.git"
@@ -13,7 +11,8 @@
     "automation",
     "analog",
     "alarm",
-    "limit"
+    "limit",
+    "node-red"
   ],
   "author": "SIKD",
 
@@ -24,6 +23,7 @@
   "node-red" : {
     "nodes": {
         "analog-alarm": "analog-alarm/analog-alarm.js"
-    }
+    },
+    "version": ">=2.0.0"
 }
 }
