@@ -1,0 +1,29 @@
+{
+  "name": "node-red-contrib-analog-alarm",
+  "version": "0.0.7",
+  "description": "A simple HiHi-Hi-Lo-LoLo alarm node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tpsindyv/node-red-contrib-analog-alarm.git"
+  },
+  "keywords": [
+    "automation",
+    "analog",
+    "alarm",
+    "limit"
+  ],
+  "author": "SIKD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tpsindyv/node-red-contrib-analog-alarm/issues"
+  },
+  "homepage": "https://github.com/tpsindyv/node-red-contrib-analog-alarm#readme",
+  "node-red" : {
+    "nodes": {
+        "analog-alarm": "analog-alarm/analog-alarm.js"
+    }
+}
+}

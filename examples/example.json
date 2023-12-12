@@ -1,0 +1,185 @@
+[
+    {
+        "id": "73fca4dc6b722e52",
+        "type": "tab",
+        "label": "analog-alarm",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "294653f421b19b77",
+        "type": "inject",
+        "z": "73fca4dc6b722e52",
+        "name": "Generate hihi alarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "test",
+        "payload": "{\"value\":31,\"hihiLimit\":30,\"hiLimit\":27,\"loLimit\":20,\"loloLimit\":18}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "5959d46a727fa6f9"
+            ]
+        ]
+    },
+    {
+        "id": "4312e5a0f42de905",
+        "type": "debug",
+        "z": "73fca4dc6b722e52",
+        "name": "Debugger",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5959d46a727fa6f9",
+        "type": "analog-alarm",
+        "z": "73fca4dc6b722e52",
+        "name": "",
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [
+                "4312e5a0f42de905"
+            ]
+        ]
+    },
+    {
+        "id": "858dd6ac86c0508a",
+        "type": "inject",
+        "z": "73fca4dc6b722e52",
+        "name": "Generate hi alarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":28,\"hihiLimit\":30,\"hiLimit\":27,\"loLimit\":20,\"loloLimit\":18}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "5959d46a727fa6f9"
+            ]
+        ]
+    },
+    {
+        "id": "a8691a278bd4c54c",
+        "type": "inject",
+        "z": "73fca4dc6b722e52",
+        "name": "No alarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":25,\"hihiLimit\":30,\"hiLimit\":27,\"loLimit\":20,\"loloLimit\":18}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "5959d46a727fa6f9"
+            ]
+        ]
+    },
+    {
+        "id": "1a3ce20bf58fbf6c",
+        "type": "inject",
+        "z": "73fca4dc6b722e52",
+        "name": "Generate lo alarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":19,\"hihiLimit\":30,\"hiLimit\":27,\"loLimit\":20,\"loloLimit\":18}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "5959d46a727fa6f9"
+            ]
+        ]
+    },
+    {
+        "id": "4f37c618c81acde3",
+        "type": "inject",
+        "z": "73fca4dc6b722e52",
+        "name": "Generate lolo alarm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"value\":15,\"hihiLimit\":30,\"hiLimit\":27,\"loLimit\":20,\"loloLimit\":18}",
+        "payloadType": "json",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "5959d46a727fa6f9"
+            ]
+        ]
+    }
+]
