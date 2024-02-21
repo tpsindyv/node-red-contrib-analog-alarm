@@ -1,6 +1,6 @@
 {
   "name": "@thingspal/node-red-contrib-analog-alarm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple HiHi-Hi-Lo-LoLo alarm node",
 
   "repository": {

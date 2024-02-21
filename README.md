@@ -13,7 +13,7 @@ To set limits, send an object with this information (values are only examples)
     "hihiLimit" : 30,
     "hiLimit": 28,
     "loLimit": 20,
-    "loloLimit", 18,
+    "loloLimit": 18,
     "hysteresis": 0.5
 }
 ```
