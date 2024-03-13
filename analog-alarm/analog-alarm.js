@@ -5,12 +5,12 @@ module.exports = function(RED) {
         node.on('input', function(msg) {
             // Create context
             let nodeContext = node.context()
-			
-			// base name of the sensor to group the stored context information for this specific sensor
-			let sensor = msg.topic || 'internals'
+            
+            // base name of the sensor to group the stored context information for this specific sensor
+            const sensor = msg.topic || 'internals'
 
             // fetch stored limits object or default
-            let limits = nodeContext.get(sensor+'.limits') || {hysteresis: 0.5}
+            let limits = nodeContext.get(sensor + '.limits') || {hysteresis: 0.5}
 
             // check if incoming message contains limits, if so, update context
             if (msg.payload.hihiLimit != null) {
@@ -32,7 +32,7 @@ module.exports = function(RED) {
             if (msg.payload.hysteresis != null) {
                 limits.hysteresis = msg.payload.hysteresis
             }
-            nodeContext.set(sensor+'.limits', limits)
+            nodeContext.set(sensor + '.limits', limits)
 
             // get alarm status
             const defaultAlarmStatus = {
@@ -41,7 +41,7 @@ module.exports = function(RED) {
                 loAlarm : false,
                 loloAlarm : false
             }
-            const alarmStatus = nodeContext.get(sensor+'.alarms') || defaultAlarmStatus
+            const alarmStatus = nodeContext.get(sensor + '.alarms') || defaultAlarmStatus
             
             if (msg.payload.value != null) {
                 // set alarm state
@@ -76,7 +76,7 @@ module.exports = function(RED) {
                 }
                 
                 // Save alarm status in context
-                nodeContext.set(sensor+'.alarms', alarmStatus)
+                nodeContext.set(sensor + '.alarms', alarmStatus)
             }
 
             // return object
