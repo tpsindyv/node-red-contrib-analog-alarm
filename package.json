@@ -1,29 +1,27 @@
 {
-  "name": "@thingspal/node-red-contrib-analog-alarm",
-  "version": "1.0.2",
-  "description": "A simple HiHi-Hi-Lo-LoLo alarm node",
-
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tpsindyv/node-red-contrib-analog-alarm.git"
-  },
-  "keywords": [
-    "automation",
-    "analog",
-    "alarm",
-    "limit",
-    "node-red"
-  ],
-  "author": "SIKD",
-
-  "bugs": {
-    "url": "https://github.com/tpsindyv/node-red-contrib-analog-alarm/issues"
-  },
-  "homepage": "https://github.com/tpsindyv/node-red-contrib-analog-alarm#readme",
-  "node-red" : {
-    "nodes": {
-        "analog-alarm": "analog-alarm/analog-alarm.js"
-    },
-    "version": ">=2.0.0"
-}
+	"name": "@thingspal/node-red-contrib-analog-alarm",
+	"version": "1.0.3",
+	"description": "A simple HiHi-Hi-Lo-LoLo alarm node",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tpsindyv/node-red-contrib-analog-alarm.git"
+	},
+	"keywords": [
+		"automation",
+		"analog",
+		"alarm",
+		"limit",
+		"node-red"
+	],
+	"author": "SIKD",
+	"bugs": {
+		"url": "https://github.com/tpsindyv/node-red-contrib-analog-alarm/issues"
+	},
+	"homepage": "https://github.com/tpsindyv/node-red-contrib-analog-alarm#readme",
+	"node-red": {
+		"nodes": {
+			"analog-alarm": "analog-alarm/analog-alarm.js"
+		},
+		"version": ">=2.0.0"
+	}
 }
